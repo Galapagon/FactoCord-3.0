@@ -77,7 +77,8 @@ func RunCommand(input string, s *discordgo.Session, m *discordgo.MessageCreate) 
 	inputvars := strings.SplitN(input, " ", 3)
 	for _, command := range CL.CommandList {
 		if strings.ToLower(command.Name) == strings.ToLower("Help") {
-			s.ChannelMessageSendEmbed(support.Config.FactorioChannelID, commandListEmbed())
+			DirectChannel := func (s *Session) UserChannelCreate(m.Author.ID)(st *Channel, err error),
+			s.ChannelMessageSend(DirectChannel, commandListEmbed())
 			return
 		}
 
