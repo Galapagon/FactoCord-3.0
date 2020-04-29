@@ -6,6 +6,7 @@
 # Compiling
 
 `Requires go 1.8 or above`
+Sudo apt install golang-go
 
 FactoCord uses the following packages:
 
